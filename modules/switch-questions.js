@@ -15,7 +15,7 @@ function switchQuestions(currentElem) {
     const nextQuestion = Number(currentElem.getAttribute("data-question")) + 1;
 
     if (nextQuestion === 6) {
-        window.location.pathname = '/pages/result.html';
+        window.location.pathname = window.location.pathname.split('questionnaire').join('result');
         return;
     }
 
@@ -66,7 +66,6 @@ function clickHandler() {
 function validateSelects(selectsArray) {
     let count = 0;
     selectsArray.forEach(select => {
-        console.log(select)
         select.classList.remove("select-error");
         if (select.value === "no") {
             count++;
