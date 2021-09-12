@@ -1,0 +1,87 @@
+.header__message-wrap[hidden="false"] {
+    display: block;
+    font-family: 'Bad Script', sans-serif;
+}
+
+.header__message-wrap[hidden="true"] {
+    display: none;
+}
+
+.questionnaire__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questionnaire__wrap[hidden="true"] {
+    display: none;
+}
+
+.questionnaire__title {
+    text-transform: uppercase;
+    color: #F6C866;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 46px;
+    max-width: 512px;
+}
+
+@media screen and (max-width: 960px) {
+    .questionnaire__title {
+        font-size: 16px;
+        max-width: 260px;
+    }
+}
+
+.questionnaire__counter {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 106px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 960px) {
+    .questionnaire__counter {
+        font-size: 12px;
+    }
+}
+
+.questionnaire {
+    position: relative;
+}
+
+.questionnaire::after, .questionnaire::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+}
+
+.questionnaire__img {
+    width: 56px;
+    height: 18px;
+    margin-bottom: 80px;
+}
+
+.questionnaire__img_first {
+    background: url("../images/rune1.svg") center center/contain no-repeat;
+}
+
+.questionnaire__img_second {
+    background: url("../images/rune2.svg") center center/contain no-repeat;
+}
+
+.questionnaire__text {
+    font-family: 'Bad Script', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 164px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 960px) {
+    .questionnaire__text {
+        font-size: 12px;
+    }
+}

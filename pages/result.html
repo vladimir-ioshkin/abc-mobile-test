@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/result.css">
+</head>
+<body>
+    <div class="recording" hidden="false">
+        <img class="recording__image" src="../images/microphone.svg" alt="microphone"/>
+        <div class="recording__progress"></div>
+        <div class="recording__counter">
+            <span id="recording-counter">0</span>%
+        </div>
+        <div class="recording__text">
+            Запись сообщеня
+        </div>
+    </div>
+    <div class="wrapper" hidden="true">
+        <div class="sections">
+            <header class="header">
+                <div class="header__message-wrap">
+                    <div class="header__message">
+                        Спасибо за&nbsp;Ваши ответы!
+                        <span class="header__message_selected">Мы&nbsp;подготовили для Вас персональную 
+                            аудио запись с&nbsp;Вашим прогнозом.
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <section class="prophesy">
+                <div class="container">
+                    <div class="prophesy__text">
+                        Вы&nbsp;можете узнать, как повлиять на&nbsp;события, 
+                        которые ожидают вас в&nbsp;ближайшем будущем.
+                    </div>
+                    <div class="prophesy__warning">
+                        <span class="prophesy__warning_selected">
+                            Первое значимое событие может произойти уже
+                            <span>14.02.2021</span></span>,
+                        Вам надо быть готовым, что&nbsp;бы 
+                        последствия не&nbsp;оказались необратимыми.
+                    </div>
+                    <div class="prophesy__text">
+                        Нажмите на&nbsp;кнопку ниже прямо сейчас и&nbsp;наберите 
+                        наш номер телефона. Прослушайте важную информацию!
+                    </div> 
+                </div>
+                <button id="result-call" class="btn prophesy__call">
+                    Позвонить и прослушать
+                </button>
+                <div class="star-wars" id="star-wars-info"></div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <details>
+                    <summary class="footer__summary">TERMENI SI&nbsp;CONDITII: ACESTA ESTE UN&nbsp;SERVICIU<br/>DE&nbsp;DIVERTISMENT. PRIN FOLOSIREA LUI</summary>
+                    <div class="footer__text">
+                        DECLARATI CA&nbsp;AVETI 18&nbsp;ANI IMPLINITI,
+                    </div>
+                </details>
+            </div>
+        </footer>
+    </div>
+    <script src="/modules/get-data.js"></script>
+</body>
+</html>

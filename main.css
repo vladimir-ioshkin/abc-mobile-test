@@ -1,0 +1,276 @@
+@import './styles/layout.css';
+@import './styles/controls.css';
+@import './styles/questionnaire.css';
+@import './styles/footer.css';
+
+
+.hero {
+    background: #202024 center center/cover no-repeat url("../images/blik.png");
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        background: #202024 center center/contain no-repeat url("../images/blik.png");
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        background: #202024 -30% 25%/110% no-repeat url("../images/blik.png");
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero {
+        background: #202024 -36% 28%/120% no-repeat url("../images/blik.png");
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header__title {
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 48px 0 12px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .header__title {
+        font-size: 12px;
+        padding-bottom: 10px;
+        margin: 14px 0 8px;
+    }
+}
+
+.header__subtitle {
+    margin: 0 0 64px;
+}
+
+@media screen and (max-width: 960px) {
+    .header__subtitle {
+        margin: 0 0 36px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__img-wrap {
+    width: 390px;
+    height: 390px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .main__img-wrap {
+        width: 224px;
+        height: 224px;
+    }
+}
+
+.main__img {
+    width: 100%;
+    height: 100%;
+    background: url("../images/icon1.svg") center center/cover no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__picture {
+    background: url("../images/pray.png") 60% center/160% no-repeat;
+    border-radius: 50%;
+    width: 238px;
+    height: 238px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 960px) {
+    .main__picture {
+        width: 137px;
+        height: 137px;
+    }
+}
+
+.main__title {
+    max-width: 500px;
+    color: #F6C866;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 960px) {
+    .main__title {
+        max-width: 288px;
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+}
+
+.main__title_uppertext {
+    text-transform: uppercase;
+}
+
+.main__subtext {
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 960px) {
+    .main__subtext {
+        font-size: 12px;
+    }
+}
+
+.mystery__wrap {
+    margin-top: 146px;
+    width: 442px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 128px 40px 84px;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 35px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 960px) {
+    .mystery__wrap {
+        width: 254px;
+        line-height: 25px;
+        padding: 58px 22px 26px;
+        margin-bottom: 40px;
+    }
+}
+
+.mystery__img {
+    height: 136px;
+    width: 136px;
+    background: url("../images/hands.png") center center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 960px) {
+    .mystery__img {
+        height: 78px;
+        width: 78px;
+    }
+}
+
+.mystery__text_selected {
+    font-weight: 500;
+    color: #F6C866;
+}
+
+@media screen and (max-width: 960px) {
+    .mystery__text_selected {
+        font-size: 20px;
+    }
+}
+
+.banner {
+    margin-bottom: 134px;
+    position: relative;
+}
+
+.banner__img {
+    background: url("../images/woman.jpg") center center/cover no-repeat;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 606px;
+    opacity: 0.2;
+}
+
+.banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    font-weight: 400;
+    line-height: 35px;
+    max-width: 95%;
+}
+
+.banner__text_selected {
+    color: #F6C866;
+}
+
+.questionnaire::before {
+    width: 296px;
+    height: 156px;
+    top: 420px;
+    right: -10%;
+    background: url("../images/eye.svg") center center/contain no-repeat;
+}
+
+.questionnaire::after {
+    width: 160px;
+    height: 162px;
+    bottom: -100px;
+    left: 11%;
+    background: url("../images/planet.svg") center center/contain no-repeat;
+}
+
+@media screen and (max-width: 1440px) {
+    .questionnaire::before {
+        top: 410px;
+        right: -20%;
+    }
+
+    .questionnaire::after {
+        bottom: -100px;
+        left: 3%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .questionnaire::before {
+        top: 243px;
+        right: -34%;
+    }
+
+    .questionnaire::after {
+        bottom: -80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .questionnaire::before {
+        width: 93px;
+        height: 50px;
+        top: 306px;
+        left: 98%;
+        right: initial;
+    }
+
+    .questionnaire::after {
+        width: 50px;
+        height: 50px;
+        bottom: 0%;
+        left: 3%;
+    }
+}

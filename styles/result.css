@@ -1,0 +1,99 @@
+@import './layout.css';
+@import './message.css';
+@import './controls.css';
+@import './footer.css';
+@import './recording.css';
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #202024;
+    margin-bottom: 36px;   
+}
+
+.header__message-wrap {
+    margin-top: 54px;
+}
+
+@media screen and (max-width: 960px) {
+    .header__message-wrap {
+        margin-top: 24px;
+    }
+}
+
+.prophesy__text {
+    width: 470px;
+    font-weight: 300;
+    margin-bottom: 36px;
+    max-width: 84%;
+}
+
+@media screen and (max-width: 960px) {
+    .prophesy__text {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 22px;
+    }
+}
+
+.prophesy__warning {
+    width: 480px;
+    color: #F6C866;
+    padding: 64px 50px 38px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 34px;
+    max-width: 86%;
+}
+
+@media screen and (max-width: 960px) {
+    .prophesy__warning {
+        padding: 12px 16px 8px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.prophesy__warning_selected {
+    font-weight: 700;
+}
+
+.prophesy__call {
+    width: 360px;
+    background: linear-gradient(45deg, #4CD964, #32B949);
+    padding: 28px 60px;
+    margin-bottom: 52px;
+}
+
+@media screen and (max-width: 960px) {
+    .prophesy__call {
+        width: 240px;
+        padding: 16px 16px;
+    }
+}
+
+.star-wars {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.star-wars__title {
+    text-transform: uppercase;
+    color: #F6C866;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.star-wars__elem {
+    margin-bottom: 12px;
+}
+
+.star-wars__elem:last-child {
+    margin-bottom: 36px;
+}

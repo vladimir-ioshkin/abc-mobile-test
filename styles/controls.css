@@ -1,0 +1,125 @@
+.controls {
+    width: 310px;
+    margin-bottom: 34px;
+}
+
+@media screen and (max-width: 960px) {
+    .controls {
+        width: 180px;
+        margin-bottom: 20px;
+    }
+}
+
+.btn {
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(45deg, #F6C866, #FEAD35);
+    color: #FFFFFF;
+    padding: 23px 24px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    outline: none; 
+}
+
+@media screen and (max-width: 960px) {
+    .btn {
+        font-size: 14px;
+        padding: 12px 4px;
+    }
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.5), rgba(255,255,255,.0)) no-repeat -2em 0%;
+    background-size: 3em 100%;
+    transform: skewX(50deg);
+    animation: blick 3s infinite;
+}
+
+
+.controls__btn:not(:last-child) {
+    margin-bottom: 34px;
+}
+
+@media screen and (max-width: 960px) {
+    .controls__btn:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes blick {
+    from {
+        background-position: -20% 0%;
+    }
+    to {
+        background-position: 120% 0%;
+    }
+}
+
+.controls__select { 
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(45deg, #E4E4E4, #CBCBCB);
+    color: #202024;
+    padding: 23px 24px;
+    border-radius: 50px;
+    margin-bottom: 34px;
+    display: block; 
+    text-align: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+@media screen and (max-width: 960px) {
+    .controls__select {
+        font-size: 14px;
+        padding: 12px 4px;
+        margin-bottom: 20px;
+    }
+}
+
+.controls__select.select-error {
+    border: 1px solid #EE5353;
+}
+
+.controls__select:focus, .controls__select:active {
+    box-shadow: 0px 4px 4px inset rgba(0,0,0,.25);
+}
+
+.controls__select-wrap {
+    position: relative;
+}
+
+.controls__select-wrap::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #202024;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: 50%;
+    right: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    .controls__select-wrap::after {
+        border-top: 6px solid #202024;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+    }
+}
